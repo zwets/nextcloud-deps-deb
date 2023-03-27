@@ -1,0 +1,7 @@
+nextcloud-deps for Debian
+
+This is a dummy package that makes Debian's package management
+system pull in the build dependencies for the NextCloud server.
+
+Dependencies are taken from the NextCloud installation guide:
+https://docs.nextcloud.com/server/latest/admin_manual/installation/source_installation.html

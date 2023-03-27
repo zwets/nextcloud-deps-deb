@@ -1,0 +1,38 @@
+### Commented entries have reasonable defaults.
+### Uncomment to edit them.
+# Source: <source package name; defaults to package name>
+Section: misc
+Priority: optional
+Homepage: https://github.com/zwets/nextcloud-deps-deb
+Standards-Version: 3.9.2
+
+Package: nextcloud-deps
+# Version: <taken from changelog>
+Maintainer: Marco van Zwetselaar <io@zwets.it>
+# Pre-Depends: <comma-separated list of packages>
+Depends: apache2, php-fpm, php-pgsql, libxml2 (>= 2.7.0),
+         php-ctype, php-curl, php-dom, php-gd, php-json,
+         php-mbstring, php-posix, php-simplexml, php-xml,
+         php-xmlreader, php-xmlwriter, php-zip, 
+         php-bz2, php-ldap, php-ftp, php-imap, php-gmp,
+         php-fileinfo, php-bcmath, php-intl
+Recommends: php-exif, php-imagick, libmagickcore-extra, ffmpeg, php-apcu
+Suggests: postgresql, php-redis
+# Provides: <comma-separated list of packages>
+# Replaces: 
+Architecture: any
+# Copyright: <copyright file; defaults to GPL2>
+Changelog: changelog
+Readme: README.Debian
+# Extra-Files: <comma-separated list of additional files for the doc directory>
+# Files: <pair of space-separated paths; First is file to include, second is destination>
+#  <more pairs, if there's more than one file to include. Notice the starting space>
+Description: Install NextCloud dependencies
+ This local package makes sure the dependencies for the NextCloud
+ server are installed and managed as dependencies.
+ .
+ The dependencies of this package are taken from the
+ installation docs at 
+ https://docs.nextcloud.com/server/latest/admin_manual/installation/source_installation.html
+ .
+ This package was created using the venerable Debian equivs package.
